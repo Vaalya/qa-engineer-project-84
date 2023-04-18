@@ -1,5 +1,55 @@
 ---
 test-cases:
+ - summary: |
+    Проверка перевода описания продукта
+  status: fail
+---
+test-cases:
+- summary: |
+    Проверка перевода дропдауна с выбором языка
+  status: fail
+---
+test-cases:
+- summary: |
+    Проверка добавления товара в корзину
+  status: fail
+---
+test-cases:
+- summary: |
+    Проверка фильтрации продуктов по категории
+  status: pass
+---
+test-cases:
+- summary: |
+    Проверка функции "продолжить покупки" из корзины
+  status: pass
+---
+test-cases:
+- summary: |
+    Проверка функции "очистить корзину"
+  status: fail
+---
+test-cases:
+- summary: |
+    Проверка фильтрации продукта по цвету 
+  status: fail
+---
+test-cases:
+- summary: |
+    Проверка фильтрации продукта по цене товара
+  status: fail
+---
+test-cases:
+- summary: |
+    Проверка фильтрации продукта по производителю товара
+  status: pass
+---
+test-cases:
+- summary: |
+     Поиск товара по ключевому слову в строке поиска
+  status: pass
+---
+test-cases:
   - summary: |
      Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops" 
     status: pass
