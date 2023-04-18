@@ -1,1 +1,41 @@
+---
+test-cases:
+  - summary: |
+     Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops" 
+    status: pass
 
+bugreports:
+  - summary: |
+      Строка "все" пустая. Нет названия строки.
+    environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    steps-to-reproduce: |
+      1. Открыта главная страница сайта (список продуктов)
+      2. Нажимаем на фильтр "категория"
+      3. Выбираем категорию "laptops"
+      4. Выбираем категорию "все"
+    expected-result: |
+      Пользователь должен видеть слово "все"
+    actual-result: |
+      Пользователь видит пустую строку
+---
+test-cases:
+  - summary: |
+       Проверка фильтрации функций "Предыдущая" и "Следующая" страница
+    status: pass
+
+bugreports:
+- summary: |
+     Пояивлась функция "Log in to comment"
+   environment: |
+      https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+    steps-to-reproduce: |
+      1. Нажать на контейнер "Log in to comment"
+      2. Пользователь должен зарегистрироваться 
+      3. 
+      4. 
+      5.
+    expected-result: |
+      
+    actual-result: |
+      
