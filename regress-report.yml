@@ -1,6 +1,6 @@
 ---
 test-cases:
- - summary: |
+- summary: |
     Проверка страницы со списком товаров на адаптивность
   status: pass
 ---    
