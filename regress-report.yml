@@ -1,91 +1,54 @@
 ---
 test-cases:
  - summary: |
-    Проверка перевода описания продукта
-  status: fail
----
-test-cases:
+    Проверка страницы со списком товаров на адаптивность
+  status: pass
+  ---    
 - summary: |
-    Проверка перевода дропдауна с выбором языка
-  status: fail
+     Проверка отображения списка с товарами
+  status: pass
+---    
+- summary: |
+    Проверка отображения подробной информации о товаре
+  status: pass
 ---
-test-cases:
 - summary: |
     Проверка добавления товара в корзину
-  status: fail
+  status: pass
 ---
-test-cases:
 - summary: |
     Проверка фильтрации продуктов по категории
   status: pass
 ---
-test-cases:
 - summary: |
-    Проверка функции "продолжить покупки" из корзины
+    Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops" 
   status: pass
 ---
-test-cases:
 - summary: |
-    Проверка функции "очистить корзину"
+   Проверка фильтрации продукта по цвету 
   status: fail
 ---
-test-cases:
-- summary: |
-    Проверка фильтрации продукта по цвету 
-  status: fail
----
-test-cases:
 - summary: |
     Проверка фильтрации продукта по цене товара
   status: fail
 ---
-test-cases:
 - summary: |
     Проверка фильтрации продукта по производителю товара
   status: pass
 ---
-test-cases:
 - summary: |
      Поиск товара по ключевому слову в строке поиска
   status: pass
----
-test-cases:
-  - summary: |
-     Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops" 
-    status: pass
 
 bugreports:
-  - summary: |
-      Строка "все" пустая. Нет названия строки.
-    environment: |
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
-    steps-to-reproduce: |
-      1. Открыта главная страница сайта (список продуктов)
-      2. Нажимаем на фильтр "категория"
-      3. Выбираем категорию "laptops"
-      4. Выбираем категорию "все"
-    expected-result: |
-      Пользователь должен видеть слово "все"
-    actual-result: |
-      Пользователь видит пустую строку
----
-test-cases:
-  - summary: |
-       Проверка фильтрации функций "Предыдущая" и "Следующая" страница
-    status: pass
-
-bugreports:
-- summary: |
-     Пояивлась функция "Log in to comment"
+ - summary: |
+     При выборе категории "Все", не отображается название этой категории. 
    environment: |
-      https://products-store-git-v2bugfixes-hexlet-components.vercel.app
-    steps-to-reproduce: |
-      1. Нажать на контейнер "Log in to comment"
-      2. Пользователь должен зарегистрироваться 
-      3. 
-      4. 
-      5.
-    expected-result: |
-      
-    actual-result: |
-      
+     https://products-store-git-v2bugfixes-hexlet-components.vercel.app
+   steps-to-reproduce: |
+     1. Открыта главная страница сайта (список продуктов)
+     2. Нажимаем на фильтр "категория"
+   expected-result: |
+     Пользователь должен видеть слово "Все" в первом элементе дропдауна
+   actual-result: |
+     Пользователь видит пустую строку. Ошибка изображена на скриншоте Без имени.png
