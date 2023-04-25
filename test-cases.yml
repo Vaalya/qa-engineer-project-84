@@ -36,6 +36,8 @@
   prerequisites:
     - Открыта страница продукта
     - Выбран Английский язык
+  test-data: |
+    no data
   steps:
     - Кликаем на дропдаун "Language"
     - Выбираем язык "Russian"
@@ -49,6 +51,8 @@
   prerequisites:
     - Открыта страница продукта
     - Выбран Английский язык
+  test-data: |
+    no data
   steps:
     - Кликаем на дропдаун "Language"
     - Выбираем язык "Russian"
