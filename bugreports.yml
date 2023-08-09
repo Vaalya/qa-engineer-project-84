@@ -1,134 +1,156 @@
 ---
 - summary: |
-    Не корректная работа фильтрации продукта по хэштегу
+    Incorrect product filtering by hashtag
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на страницу продукта https://hexlet-products-store.vercel.app/products/1
-    2. Нажать на хэштег "#smartphones"
+    1. Go to product page https://hexlet-products-store.vercel.app/products/1
+    2. Click on hashtag "#smartphones"
   expected-result: |
-    Пользователь должен видеть товар соответствующий выбранной категории, нажав на "#smartphones" 
+    The user should see the product corresponding to the selected category by clicking on "#smartphones" 
   actual-result: |
-    Пользователь не может перейти по хэштегу "#smartphones"
+    User can't click on hashtag "#smartphones"
     
 - summary: |
-    Не корректное добавление нескольких товаров в корзину
+    Incorrect addition of several items to the cart
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на главную страницу https://hexlet-products-store.vercel.app
-    2. Выбрав товар нажать "в корзину"
-    3. В модальном окне выбрать количество товара
-    4. Нажать кноку "Подтвердить"
+    1. Go to main page https://hexlet-products-store.vercel.app
+    2. Выбрав товар нажать "в корзину" After choosing a product, click "add to cart"
+    3. В модальном окне выбрать количество товара In the modal window, select the quantity of goods
+    4. Нажать кноку "Подтвердить" Press the "Confirm" button
   expected-result: |
     Пользователь должен выбрать в модальном окне количество товара, затем подтвердить добавление товара нажатием на кнопку "Подтвердить"
+    The user must select the quantity of goods in the modal window, then confirm the addition of goods by clicking on the "Confirm" button
   actual-result: |
     Пользователь не может выбрать количество товара в модальном окне
+    The user cannot select the quantity of goods in the modal window
     
 - summary: |
     Не корректная работа оформления заказа на странице корзины
+    Checkout not working correctly on the shopping cart page
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на страницу корзины https://hexlet-products-store.vercel.app/cart
-    2. Нажать кнопку "Оформить заказ"
-    3. Нажать кнопку "Подтвердить" оформление заказа в модальном окне
+    1. Go to cart page https://hexlet-products-store.vercel.app/cart
+    2. Нажать кнопку "Оформить заказ". Click the "Place an order" button
+    3. Нажать кнопку "Подтвердить" оформление заказа в модальном окне. Click the "Confirm" button in the checkout modal window
   expected-result: |
-    Пользователь должен в модальном окне нажать кнопку "подтвердить" чтобы товар был оформлен 
+    Пользователь должен в модальном окне нажать кнопку "подтвердить" чтобы товар был оформлен
+    The user must click the "confirm" button in the modal window for the product to be issued
   actual-result: |
     При нажатии на кнопку "Оформить заказ" не появляется модальное окно для подтверждения оформления заказа,
-    заказ офрмляется сразу 
+    заказ офрмляется сразу
+    When you click on the "Place an order" button, a modal window does not appear to confirm the order, the order is placed immediately
     
 - summary: |
-    Не корректный перевод описания продукта
+    Не корректный перевод описания продукта. Incorrect translation of the product description
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на страницу продукта https://hexlet-products-store.vercel.app/products/1
-    2. Кликаем на дропдаун "Language"
-    3. Выбираем язык "Russian"
+    1. Go to the product page https://hexlet-products-store.vercel.app/products/1
+    2. Кликаем на дропдаун "Language" Click on dropdown "Language"
+    3. Выбираем язык "Russian" Choose the language "Russian"
   expected-result: |
     Пользователь должен видеть описание продукта на русском языке
+    The user must see the product description in Russian
   actual-result: |
     Пользователь видит описание продукта на английском языке
+    The user sees the product description in English
     
 - summary: |
-    Не корректная работа перевода дропдауна с выбором языка
+    Не корректная работа перевода дропдауна с выбором языка. Dropdown translation does not work correctly with language selection
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на главную страницу https://hexlet-products-store.vercel.app
-    2. Кликаем на дропдаун "Language"
-    3. Выбираем язык "Russian"
-    4. Кликаем на дропдаун "Язык"
+    1. Go to main page https://hexlet-products-store.vercel.app
+    2. Кликаем на дропдаун "Language" Click to dropdown "Language"
+    3. Выбираем язык "Russian" Choose the language "Russian"
+    4. Кликаем на дропдаун "Язык" Click on dropdown "Language"
   expected-result: |
-    Пользователь должен видеть список языков на русском языке
-    - Английский
-    - Русский
+    Пользователь должен видеть список языков на русском языке. The user should see a list of languages in Russian
+    - English
+    - Russian
   actual-result: |
-    Пользователь видит список языков на английском языке
+    Пользователь видит список языков на английском языке. The user sees a list of languages in English
     - English
     - Russian
     
 - summary: |
-    Не корректная работа функции "очистить корзину"
+    Не корректная работа функции "очистить корзину" "Empty Trash" function not working properly
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на страницу корзины https://hexlet-products-store.vercel.app/cart
-    2. Нажать кнопку "очистить корзину"
-    3. Появляется модальное окно
-    4. Нажать кнопку "подтвердить удаление" 
+    1. Go to cart page https://hexlet-products-store.vercel.app/cart
+    2. Нажать кнопку "очистить корзину" Click the "empty cart" button
+    3. Появляется модальное окно A modal window appears
+    4. Нажать кнопку "подтвердить удаление" Click the "confirm deletion" button
   expected-result: |
     Пользователь должен нажать кнопку "подтвердить удаление", чтобы корзина очистилась
+    The user must click the "confirm deletion" button for the trash to be emptied
   actual-result: |
     Модальное окно для подтверждение об удалении не появляется и корзина очищается сразу
+    The modal window for confirmation of deletion does not appear and the basket is emptied immediately
     
 - summary: |
     Не корректная работа на устройстве iPhone 12 pro
+    Not working correctly on iPhone 12 pro
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на страницу продукта https://hexlet-products-store.vercel.app/products/1
+    1. Go to product page https://hexlet-products-store.vercel.app/products/1
   expected-result: |
     Sidebar подстраивается под телефон. Все фунции видно без дефектов
+    Sidebar adapts to the phone. All video features without defects
   actual-result: |
     Адаптивность страници нарушина. Категория товаров съезжает за приделы боковой панели управления.
+    Page responsiveness is broken. The product category slides out of the side control panel.
 
 - summary: |
-    Не работает функиция фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops" 
+    Не работает функиция фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops"
+    The function of filtering products by the selected category "all" does not work after the selected category "laptops"
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на главную страницу https://hexlet-products-store.vercel.app
-    2. Кликаем на дропдаун "Категория"
-    3. Выбираем категорию "laptops"
-    4. Выбираем категорию "все"
+    1. Go to main page https://hexlet-products-store.vercel.app
+    2. Кликаем на дропдаун "Категория" Click on dropdown "Category"
+    3. Выбираем категорию "laptops" Select category "laptops"
+    4. Выбираем категорию "все" Select category "all"
   expected-result: |
     На боковой панели должен быть фильтр для выбора категории. Пользователь может выбрать категорию "laptops", 
-    после выбранной функиции должен видеть товар выбранный по категории. Далее выбрав категорию "все", пользователь должен увидеть весь список товара. 
+    после выбранной функиции должен видеть товар выбранный по категории. Далее выбрав категорию "все", пользователь должен увидеть весь список товара.
+    The sidebar should have a filter to select a category. The user can select the category "laptops", after the selected function should see the 
+    product selected by category. Further, by selecting the "all" category, the user should see the entire list of goods.
   actual-result: |
     Пользователь не может выбрать функцию "все"
+    The user cannot select the "all" function
 
 - summary: |
     Отсутствует функция фильтрации продукта по цвету
+    There is no function to filter the product by color
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на главную страницу https://hexlet-products-store.vercel.app 
+    1. Go to main page https://hexlet-products-store.vercel.app 
   expected-result: |
     На боковой панели должен быть фильтр для выбора цвета
+    There should be a filter on the sidebar to select a color
   actual-result: |
-    Пользователь не видит фильтр для выбора цвета на боковой панели 
+    Пользователь не видит фильтр для выбора цвета на боковой панели
+    The user does not see the filter for choosing a color in the sidebar
 
 - summary: |
-    Не корректно работает функция фильтрации продукта по цене
+    Не корректно работает функция фильтрации продукта по цене 
+    The function of filtering a product by price does not work correctly
   environment: |
-    Google Chrome	112.0.5615.86 (Официальная сборка), (64 бит)
+    Google Chrome	112.0.5615.86 (Official build), (64 bit)
   steps-to-reproduce: |
-    1. Зайти на главную страницу https://hexlet-products-store.vercel.app
-    2. Выбираешь "до" -1
+    1. Go to main page https://hexlet-products-store.vercel.app
+    2. Выбираешь "до" -1 Choose "before" -1
   expected-result: |
-    Пользователь не должен иметь возможность вводить значения ниже 0
+    Пользователь не должен иметь возможность вводить значения ниже 0 
+    The user should not be able to enter values below 0
   actual-result: |
     Пользователь может ввести значение меньше 0 в фильтр по цене "до"
+    The user can enter a value less than 0 in the filter for "before" price
