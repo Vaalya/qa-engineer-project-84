@@ -24,3 +24,30 @@ implicit:
   - При переводе сайта на русский язык, не переводится описание товара.
   - В корзине при удалении товара, нет модального окна для подтверждения об удалении товара.
   - При оформлении заказа нет кнопки "подтвердить заказ". 
+
+
+functional:
+  - The user should be able to filter products by price, color, size, manufacturer.
+  - The user should be able to search for products by keyword or category.
+  - The user should be able to view the products and view detailed information about the product.
+  - The user should be able to add items to the cart and view the contents of the cart.
+  - On the cart page, the user can remove an item from the cart.
+  - On the product page and in the catalog, the name, rating, price with and without a discount are displayed.
+  - The user can add a product to the shopping cart and continue to select products in the catalog.
+  - The shopping cart is stored in the browser session.
+non-functional:
+  - The site must have a mobile version.
+  - The site must be accessible on various devices.
+  - The website should be designed with usability in mind and optimized for speed.
+  - The site must be secure and protect user data.
+  - The site must be tested for compatibility with the latest versions of browsers.
+  - The site must be able to handle a large amount of traffic.
+implicit:
+  - In the category selection function, it is not possible to select all products after some selected category.
+  - When adding an item to the cart, you cannot select the number of items.
+  - There is no user registration and authorization on the site.
+  - When placing an order, it is not known how to contact the user.
+  - When choosing products in the cart, the remaining quantity of the remaining product does not change.
+  - When translating the site into Russian, the product description is not translated.
+  - In the cart when deleting an item, there is no modal window to confirm the deletion of the item.
+  - When placing an order, there is no "confirm order" button.
