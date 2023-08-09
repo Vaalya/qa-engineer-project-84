@@ -1,80 +1,90 @@
 ---
 - summary: |
-    Проверка фильтрации продукта по хэштегу
+    Проверка фильтрации продукта по хэштегу. Check product filtering by hashtag
   requirement: |
      Пользователь должен иметь возможность переходить по хэштегу выбранную категорию
+     The user should be able to follow the hashtag of the selected category
   prerequisites: |
-     Открыта страница продукта 
+     Открыта страница продукта. Product page opened
   test-data: |
      no data
   steps:
-    - Нажать на продукт "iPhone 9"
-    - Нажать на хэштег "#smartphones" 
+    - Нажать на продукт "iPhone 9". Click on the product "iPhone 9"
+    - Нажать на хэштег "#smartphones". Click on the hashtag "#smartphones"
   expected-result: |
-    Пользователь должен видеть товар соответствующий выбранной категории, нажав на "#smartphones" 
+    Пользователь должен видеть товар соответствующий выбранной категории, нажав на "#smartphones"
+    The user should see the product corresponding to the selected category by clicking on "#smartphones"
     
 - summary: |
-    Проверка добавления нескольких товаров в корзину
+    Проверка добавления нескольких товаров в корзину. Verify adding multiple items to cart
   requirement: |
     Пользователь должен иметь возможность добавлять несколько товаров в корзину
+    The user should be able to add multiple items to the cart
   prerequisites: |
-    Открыта главная страница сайта (список продуктов)
+    Открыта главная страница сайта (список продуктов). Opened the main page of the site (list of products)
   test-data: |
     no data
   steps:
-    - Добавляем товар в корзину
-    - В модальном окне выбираем количество товара
-    - Нажимаем "Подтвердить"
+    - Добавляем товар в корзину. Adding a product to the cart
+    - В модальном окне выбираем количество товара. In the modal window, select the quantity of goods
+    - Нажимаем "Подтвердить". Click "Confirm"
   expected-result: |
     Пользователь должен иметь возможность выбрать нужное количество товара в модальном окне
+    The user should be able to select the desired quantity of goods in the modal window
 
 - summary: |
-    Проверка оформления заказа на странице корзины
+    Проверка оформления заказа на странице корзины. Checkout Checkout on the Cart Page
   requirement: |
     Пользователь должен иметь возможность оформить заказ на странице заказов
+    The user should be able to checkout on the orders page
   prerequisites:
-    Открыта страница корзины
-    В корзине должен быть товар
+    Открыта страница корзины. Cart page opened
+    В корзине должен быть товар. There must be an item in the cart
   test-data: |
     no data
   steps:
-    - Кликаем на "Оформить заказ"
-    - Кликаем на "Подтвердить оформление заказа"
+    - Кликаем на "Оформить заказ". Click on "Place an order"
+    - Кликаем на "Подтвердить оформление заказа". Click on "Confirm Order"
   expected-result: |
     Пользователь должен подтвердить оформление заказа в модальном окне
+    The user must confirm the checkout in the modal window
 
 - summary: |
-    Проверка перевода описания продукта
+    Проверка перевода описания продукта. Product description translation check
   requirement: |
     При переключении языка на странице описание продукта должно быть переведенным соответственно выбраному языку
+    When switching the language on the page, the product description must be translated according to the selected language
   prerequisites:
-    Открыта страница продукта
-    Выбран Английский язык
+    Открыта страница продукта. Product page opened
+    Выбран Английский язык. Selected English
   test-data: |
     no data
   steps:
-    - Кликаем на дропдаун "Language"
-    - Выбираем язык "Russian"
+    - Кликаем на дропдаун "Language". Click to dropdown "Language"
+    - Выбираем язык "Russian". Choose the language "Russian"
   expected-result: |
     Пользователь должен видеть описание продукта на русском языке
+    The user must see the product description in Russian
   
 - summary: |
-    Проверка перевода дропдауна с выбором языка
+    Проверка перевода дропдауна с выбором языка. Checking dropdown translation with language selection
   requirement: |
     При переключении языка на странице, список языков выбора должен быть переведенным и соответствовать выбранному языку
+    When switching the language on the page, the list of languages of choice must be translated and match the selected language
   prerequisites:
-    Открыта страница продукта
-    Выбран Английский язык
+    Открыта страница продукта. Product page opened
+    Выбран Английский язык. Selected English
   test-data: |
     no data
   steps:
-    - Кликаем на дропдаун "Language"
-    - Выбираем язык "Russian"
-    - Кликаем на дропдаун "Язык"
+    - Кликаем на дропдаун "Language". Click on dropdown "Language"
+    - Выбираем язык "Russian". Choose the language "Russian"
+    - Кликаем на дропдаун "Язык".  Click on dropdown "Language"
   expected-result: |
     Пользователь должен видеть список языков на русском языке
-    - Английский
-    - Русский
+    The user should see a list of languages in Russian
+    - English
+    - Russian
 
 - summary: |
     Проверка функции "очистить корзину"
