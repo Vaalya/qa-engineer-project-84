@@ -61,10 +61,10 @@
     no data
   steps:
     - Кликаем на дропдаун "Language". Click to dropdown "Language"
-    - Выбираем язык "Russian". Choose the language "Russian"
+    - Выбираем язык "Ukrainian". Choose the language "Ukrainian"
   expected-result: |
-    Пользователь должен видеть описание продукта на русском языке
-    The user must see the product description in Russian
+    Пользователь должен видеть описание продукта на Ukrainian языке
+    The user must see the product description in Ukrainian
   
 - summary: |
     Проверка перевода дропдауна с выбором языка. Checking dropdown translation with language selection
@@ -78,13 +78,13 @@
     no data
   steps:
     - Кликаем на дропдаун "Language". Click on dropdown "Language"
-    - Выбираем язык "Russian". Choose the language "Russian"
+    - Выбираем язык "Ukrainian". Choose the language "Ukrainian"
     - Кликаем на дропдаун "Язык".  Click on dropdown "Language"
   expected-result: |
-    Пользователь должен видеть список языков на русском языке
-    The user should see a list of languages in Russian
+    Пользователь должен видеть список языков на Ukrainian языке
+    The user should see a list of languages in Ukrainian
     - English
-    - Russian
+    - Ukrainian
 
 - summary: |
     Проверка функции "очистить корзину". Testing the "Empty Trash" Function
