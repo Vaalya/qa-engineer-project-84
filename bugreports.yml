@@ -51,10 +51,10 @@
   steps-to-reproduce: |
     1. Go to the product page https://hexlet-products-store.vercel.app/products/1
     2. Кликаем на дропдаун "Language" Click on dropdown "Language"
-    3. Выбираем язык "Russian" Choose the language "Russian"
+    3. Выбираем язык "Ukrainian" Choose the language "Ukrainian"
   expected-result: |
     Пользователь должен видеть описание продукта на русском языке
-    The user must see the product description in Russian
+    The user must see the product description in Ukrainian
   actual-result: |
     Пользователь видит описание продукта на английском языке
     The user sees the product description in English
@@ -66,16 +66,16 @@
   steps-to-reproduce: |
     1. Go to main page https://hexlet-products-store.vercel.app
     2. Кликаем на дропдаун "Language" Click to dropdown "Language"
-    3. Выбираем язык "Russian" Choose the language "Russian"
+    3. Выбираем язык "Ukrainian" Choose the language "Ukrainian"
     4. Кликаем на дропдаун "Язык" Click on dropdown "Language"
   expected-result: |
-    Пользователь должен видеть список языков на русском языке. The user should see a list of languages in Russian
+    Пользователь должен видеть список языков на русском языке. The user should see a list of languages in Ukrainian
     - English
-    - Russian
+    - Ukrainian
   actual-result: |
     Пользователь видит список языков на английском языке. The user sees a list of languages in English
     - English
-    - Russian
+    - Ukrainian
     
 - summary: |
     Не корректная работа функции "очистить корзину" "Empty Trash" function not working properly
