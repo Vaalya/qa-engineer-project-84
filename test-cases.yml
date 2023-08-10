@@ -87,153 +87,177 @@
     - Russian
 
 - summary: |
-    Проверка функции "очистить корзину"
+    Проверка функции "очистить корзину". Testing the "Empty Trash" Function
   requirement: |
     При нажатии на кнопку "очистить корзину" должно появлятся модальное окно для подтверждения об удалении всей корзины
+    When you click on the "empty cart" button, a modal window should appear to confirm that the entire cart has been deleted.
   prerequisites: |
     Открыта страница корзины. В корзине должен находиться товар.
+    The shopping cart page is open. There must be an item in the cart.
   test-data: |
     no data
   steps:
-    - нажать кнопку "очистить корзину"
-    - Появляется модальное окно
-    - Нажать кнопку "подтвердить удаление" 
+    - нажать кнопку "очистить корзину". click the "empty cart" button
+    - Появляется модальное окно. A modal window appears
+    - Нажать кнопку "подтвердить удаление". Click the "confirm deletion" button
   expected-result: |
     Пользователь должен нажать кнопку "подтвердить удаление" чтобы корзина очистилась 
+    The user must click the "confirm deletion" button to empty the trash
 
 - summary: |
     Проверка страницы со списком товаров на адаптивность
+    Checking the page with a list of products for adaptability
   requirement: |
-    Сайт должен иметь мобильную версию
+    Сайт должен иметь мобильную версию. The site must have a mobile version
   prerequisites:
-    Открыта главная страница на устройстве iPhone 12 pro
+    Открыта главная страница на устройстве iPhone 12 pro. Home page open on iPhone 12 pro
   test-data: |
     no data
   steps:
-    - Кликаем на ссылку "Магазин"
+    - Кликаем на ссылку "Магазин". Click on the link "Shop"
   expected-result: |
     Пользователь должен видеть список товаров
+    The user should see a list of products
 
 - summary: |
-    Проверка отображения списка с товарами
+    Проверка отображения списка с товарами. Checking the display of a list with products
   requirement: |
     Пользователь должен иметь возможность просматривать товары
+    The user must be able to view the products
   prerequisites:
-    Открыта главная страница
+    Открыта главная страница. Main page opened
   test-data: |
     no data
   steps:
-    - Кликаем на ссылку "Магазин"
+    - Кликаем на ссылку "Магазин". Click on the link "Shop"
   expected-result: |
     Пользователь должен видеть список товаров
+    The user should see a list of products
 
 - summary: |
     Проверка отображения подробной информации о товаре
+    Checking the Display of Detailed Product Information
   requirement: |
-    Пользователь должен иметь возможность просматривать подробную информацию о товаре.  
+    Пользователь должен иметь возможность просматривать подробную информацию о товаре.
+    The user should be able to view detailed product information.
   prerequisites:
-    Открыта главная страница
+    Открыта главная страница.  Main page opened
   test-data: |
     no data
   steps:
-    - Выбираем любой товар
+    - Выбираем любой товар. Choose any product
   expected-result: |
-    Пользователь должен видеть описание товара
+    Пользователь должен видеть описание товара. The user must see the product description
 
 - summary: |
-    Проверка добавления товара в корзину
+    Проверка добавления товара в корзину. Checking if an item has been added to the cart
   requirement: |
     Пользователь должен иметь возможность добавлять товары в корзину и просматривать содержимое корзины.
+    The user should be able to add items to the cart and view the contents of the cart.
   prerequisites: |
-    Открыта главная страница сайта (список продуктов)
+    Открыта главная страница сайта (список продуктов). Opened the main page of the site (list of products)
   test-data: |
     no data
   steps:
-    - Добавляем товар в корзину
-    - Переходим в Корзину
+    - Добавляем товар в корзину. Adding a product to the cart
+    - Переходим в Корзину. Go to shopping cart
   expected-result: |
-     Пользователь видит добавленные товары в корзине
+     Пользователь видит добавленные товары в корзине. The user sees the added items in the cart
 
 - summary: |
-    Проверка фильтрации продуктов по категории
+    Проверка фильтрации продуктов по категории. Check product filtering by category
   requirement: |
-     Пользователь должен иметь возможность искать товары по категории
+     Пользователь должен иметь возможность искать товары по категории. The user should be able to search for products by category
   prerequisites: |
-     Открыта главная страница сайта (список продуктов)
+     Открыта главная страница сайта (список продуктов). Opened the main page of the site (list of products)
   test-data: |
      no data
   steps:
-    - Нажимаем на фильтр "категория"
-    - Выбираем категорию "laptops"
+    - Нажимаем на фильтр "категория". Click on the category filter
+    - Выбираем категорию "laptops". Select category "laptops"
   expected-result: |
      Пользователь видет список товаров соответствующий выбранной категории "laptops"
+     The user sees a list of products corresponding to the selected category "laptops"
 
 - summary: |
-    Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops" 
+    Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops"
+    Checking the filtering of products for the selected category "all", after the selected category "laptops"
   requirement: |
      После выбранной категории "laptops", пользователь имеет возможность выбрать функцию "все", чтобы снова увидеть весь список товаров
+     After selecting the "laptops" category, the user has the option to select the "all" function to see the entire list of products again
   prerequisites: |
-     Открыта главная страница сайта (список продуктов)
+     Открыта главная страница сайта (список продуктов). Opened the main page of the site (list of products)
   test-data: |
      no data
   steps:
-    - Нажимаем на фильтр "категория"
-    - Выбираем категорию "laptops"
-    - Выбираем категорию "все"
+    - Нажимаем на фильтр "категория". Click on the category filter
+    - Выбираем категорию "laptops". Select category "laptops"
+    - Выбираем категорию "все". Select category "all"
   expected-result: |
      Пользователь должен видеть весь сисок товаров после выбранной функции "все" 
+     The user should see the entire list of products after the selected function "all"
 
 - summary: |
-    Проверка фильтрации продукта по цвету 
+    Проверка фильтрации продукта по цвету. Check product filtering by color 
   requirement: |
      Пользователь должен иметь возможность фильтровать товары по цвету
+     User should be able to filter products by color
   prerequisites: |
-     Открыта главная страница (список продуктов)
+     Открыта главная страница (список продуктов). Main page opened (product list)
   test-data: |
      no data
   steps:
-    - В блоке sidebar нажать фильтр "цвет"
-    - Выбрать цвет синий
+    - В блоке sidebar нажать фильтр "цвет". In the sidebar block, click the "color" filter
+    - Выбрать цвет синий.  Choose color blue
   expected-result: |
     Пользователь видет список товаров соответствующий выбранному цвету "синий"
+    The user sees a list of products corresponding to the selected color "blue"
 
 - summary: |
-    Проверка фильтрации продукта по цене товара
+    Проверка фильтрации продукта по цене товара. Checking product filtering by product price
   requirement: |
      Пользователь должен иметь возможность фильтровать товары по цене
+     The user should be able to filter products by price
   prerequisites: |
-     Открыта главная страница (список продуктов)
+     Открыта главная страница (список продуктов). Main page opened (product list)
   test-data: |
      no data
   steps:
-    - Выбрать цену от "100"
-    - Выбрать цену до "500"
+    - Выбрать цену от "100". - Select price from "100"
+    - Выбрать цену до "500". - Select price up to "500"
   expected-result: |
      Пользователь должен видеть список товар в ценовом диапозоне от "100" до "500"
+     The user should see a list of products in the price range from "100" to "500"
 
 - summary: |
-    Проверка фильтрации продукта по производителю товара
+    Проверка фильтрации продукта по производителю товара.
+    Checking product filtering by product manufacturer
   requirement: |
      Пользователь должен иметь возможность фильтровать товары по производителю
+     The user should be able to filter products by manufacturer
   prerequisites: |
      Открыта главная страница (список продуктов)
+     Main page opened (product list)
   test-data: |
      no data
   steps:
-    - Выбрать производителя "Apple"
+    - Выбрать производителя "Apple". - Select manufacturer "Apple"
   expected-result: |
      Пользователь должен видеть список товаров соответствующий выбранному производителю "Apple"
+     The user should see a list of products corresponding to the selected manufacturer "Apple"
 
 - summary: |
-    Поиск товара по ключевому слову в строке поиска
+    Поиск товара по ключевому слову в строке поиска. Search for a product by keyword in the search bar
   requirement: |
      Пользователь должен иметь возможность искать товары по ключевому слову
+     The user should be able to search for products by keyword
   prerequisites: |
-     Открыта главная страница (список продуктов)
+     Открыта главная страница (список продуктов). Main page opened (product list)
   test-data: |
      no data
   steps:
-    - На боковой панели кликнуть в поле поиска
-    - Ввести "iPhone" 
+    - На боковой панели кликнуть в поле поиска. - On the sidebar, click in the search field
+    - Ввести "iPhone" . - Enter "iPhone"
   expected-result: |
      Пользователь должен видеть список товаров соответствующий ключевому слову "iPhone"
+     The user should see a list of products matching the keyword "iPhone"
