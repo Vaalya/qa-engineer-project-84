@@ -4,9 +4,9 @@
   requirement: |
     The user should be able to follow the hashtag of the selected category
   prerequisites: |
-     Product page opened
+    Product page opened
   test-data: |
-     no data
+    no data
   steps:
     - Click on the product "iPhone 9"
     - Click on the hashtag "#smartphones"
@@ -142,30 +142,30 @@
     - Adding a product to the cart
     - Go to shopping cart
   expected-result: |
-     The user sees the added items in the cart
+    The user sees the added items in the cart
 
 - summary: |
     Check product filtering by category
   requirement: |
-     The user should be able to search for products by category
+    The user should be able to search for products by category
   prerequisites: |
-     Opened the main page of the site (list of products)
+    Opened the main page of the site (list of products)
   test-data: |
-     no data
+    no data
   steps:
     - Click on the category filter
     - Select category "laptops"
   expected-result: |
-     The user sees a list of products corresponding to the selected category "laptops"
+    The user sees a list of products corresponding to the selected category "laptops"
 
 - summary: |
     Checking the filtering of products for the selected category "all", after the selected category "laptops"
   requirement: |
-     After selecting the "laptops" category, the user has the option to select the "all" function to see the entire list of products again
+    After selecting the "laptops" category, the user has the option to select the "all" function to see the entire list of products again
   prerequisites: |
-     Opened the main page of the site (list of products)
+    Opened the main page of the site (list of products)
   test-data: |
-     no data
+    no data
   steps:
     - Click on the category filter
     - Select category "laptops"
@@ -176,11 +176,11 @@
 - summary: |
     Check product filtering by color 
   requirement: |
-     User should be able to filter products by color
+    User should be able to filter products by color
   prerequisites: |
-     Main page opened (product list)
+    Main page opened (product list)
   test-data: |
-     no data
+    no data
   steps:
     - In the sidebar block, click the "color" filter
     - Choose color blue
@@ -194,25 +194,25 @@
   prerequisites: |
     Main page opened (product list)
   test-data: |
-     no data
+    no data
   steps:
     - Select price from "100"
     - Select price up to "500"
   expected-result: |
-     The user should see a list of products in the price range from "100" to "500"
+    The user should see a list of products in the price range from "100" to "500"
 
 - summary: |
     Checking product filtering by product manufacturer
   requirement: |
-     The user should be able to filter products by manufacturer
+    The user should be able to filter products by manufacturer
   prerequisites: |
-     Main page opened (product list)
+    Main page opened (product list)
   test-data: |
-     no data
+    no data
   steps:
     - Select manufacturer "Apple"
   expected-result: |
-     The user should see a list of products corresponding to the selected manufacturer "Apple"
+    The user should see a list of products corresponding to the selected manufacturer "Apple"
 
 - summary: |
     Search for a product by keyword in the search bar
