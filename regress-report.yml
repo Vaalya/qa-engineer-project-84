@@ -49,7 +49,7 @@ test-cases:
   status: pass
 
 - summary: |
-   Check product filtering by color
+    Check product filtering by color
   status: fail
 
 - summary: |
@@ -61,7 +61,7 @@ test-cases:
   status: pass
 
 - summary: |
-     Search for a product by keyword in the search bar
+    Search for a product by keyword in the search bar
   status: pass
 
 bugreports:
