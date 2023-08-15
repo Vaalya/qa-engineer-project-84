@@ -1,97 +1,78 @@
 ---
 test-cases:
 - summary: |
-    Проверка фильтрации продукта по хэштегу
     Check product filtering by hashtag
   status: pass
 
 - summary: |
-    Проверка добавления нескольких товаров в корзину
     Verify adding multiple items to cart
   status: fail
 
 - summary: |
-    Проверка оформления заказа на странице корзины
-    Checkout Checkout on the Cart Page
+    Checkout ordering on the cart page
   status: fail
 
 - summary: |
-    Проверка перевода описания продукта
     Product description translation check
   status: fail
 
 - summary: |
-    Проверка перевода дропдауна с выбором языка
     Checking dropdown translation with language selection
   status: fail
   
 - summary: |
-    Проверка функции "очистить корзину"
     Testing the "Empty Trash" Function
   status: fail
 
 - summary: |
-    Проверка страницы со списком товаров на адаптивность
     Checking the page with a list of products for adaptability
   status: pass
 
 - summary: |
-    Проверка отображения списка с товарами
     Checking the display of a list with products
   status: pass
     
 - summary: |
-    Проверка отображения подробной информации о товаре
     Checking the Display of Detailed Product Information
   status: pass
 
 - summary: |
-    Проверка добавления товара в корзину
     Checking if an item has been added to the cart
   status: pass
 
 - summary: |
-    Проверка фильтрации продуктов по категории
     Check product filtering by category
   status: pass
 
 - summary: |
-    Проверка фильтрации продуктов по выбранной категории "все", после выбранной категории "laptops"
     Checking the filtering of products for the selected category "all", after the selected category "laptops"
   status: pass
 
 - summary: |
-   Проверка фильтрации продукта по цвету 
    Check product filtering by color
   status: fail
 
 - summary: |
-    Проверка фильтрации продукта по цене товара
     Checking product filtering by product price
   status: fail
 
 - summary: |
-    Проверка фильтрации продукта по производителю товара
     Checking product filtering by product manufacturer
   status: pass
 
 - summary: |
-     Поиск товара по ключевому слову в строке поиска
      Search for a product by keyword in the search bar
   status: pass
 
 bugreports:
- - summary: |
-     При выборе категории "Все", не отображается название этой категории. 
+ - summary: | 
      When you select the "All" category, the name of this category is not displayed
    environment: |
      https://products-store-git-v2bugfixes-hexlet-components.vercel.app
    steps-to-reproduce: |
-     1. Открыта главная страница сайта (список продуктов). Opened the main page of the site (list of products)
-     2. Нажимаем на фильтр "категория". Click on the category filter
+     1. Opened the main page of the site (list of products)
+     2. Click on the category filter
    expected-result: |
-     Пользователь должен видеть слово "Все" в первом элементе дропдауна
      The user should see the word "Everyone" in the first element of the dropdown
    actual-result: |
-     Пользователь видит пустую строку. Ошибка изображена на скриншоте Category.bug.png
      The user sees an empty string. The bug is shown in the screenshot Category.bug.png
